@@ -8,7 +8,8 @@
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
  <script src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
  <script>new WOW().init()</script>
- <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-light_blue.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
  <meta property="og:title" content="« S Stewart »">
  <meta property="og:image" content="https://file.house/G7h1.png">
@@ -25,35 +26,15 @@
   }
  </style>
  </head>
- <!-- Uses a header that scrolls with the text, rather than staying locked at the top --> 
- <div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">S Stewart</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="http://f4host.xyz">f4host</a>
-        <a class="mdl-navigation__link" href="https://ko-fi.com/A753OUG">donate</a>
-        <a class="mdl-navigation__link" href="https://twitter.com/xshot_">twitter</a>
-        <a class="mdl-navigation__link" href="https://github.com/xshotD">github</a>
-        <a class="mdl-navigation__link" href="https://lolbot.banne.club">lolbot</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">S Stewart</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="http://f4host.xyz">f4host</a>
-      <a class="mdl-navigation__link" href='https://ko-fi.com/A753OUG'>donate</a>
-      <a class="mdl-navigation__link" href="https://twitter.com/xshot_">twitter</a>
-      <a class="mdl-navigation__link" href="https://github.com/xshotD">github</a>
-      <a class="mdl-navigation__link" href="https://lolbot.banne.club">lolbot</a>
-    </nav>
-  </div>
- <br/>
+<body>
+ <div class="ui menu">
+        <a class="item" href="http://f4host.xyz">f4host</a>
+        <a class="item" href="https://ko-fi.com/A753OUG">donate</a>
+        <a class="item" href="https://twitter.com/xshot_">twitter</a>
+        <a class="item" href="https://github.com/xshotD">github</a>
+        <a class="item" href="https://lolbot.banne.club">lolbot</a>
+ </div>
+  <br/>
  <h1 class="wow bounceIn">Welcome</h1>
  <p>I'm S Stewart, widely known as lold, F4ncy (on Rizon IRC), imr, xshotD,<br/> and probably some others I'm missing.</p>
   <br/>
@@ -62,10 +43,18 @@
   <h1 class="wow bounceIn">Projects</h1>
   <p>I have worked on many projects - check some out here.</p>
   <br/>
-  <p class="wow flipInX"><a href="https://github.com/xshotD/betteryourdiscord">BetterYourDiscord</a></p>
-  <small>A indev Discord CSS overhaul.</small>
+<div class="ui four column grid">
+  <div class="row">
+   <div class="column wow flipInX"><a href="https://github.com/xshotD/lolbot">lolbot</a><br/><br/><small>The simple onefile bot for everyone</small></div>
+   <div class="column wow flipInX"><a href="https://github.com/xshotD/dbot">dbot</a><br/><br/><small>A cool bot with a web server</small></div>
+    <div class="column wow flipInX"><a href="https://github.com/xshotD/betteryourdiscord">BetterYourDiscord</a><br/><br/><small>A CSS overhaul for Discord (soon™)</small></div>
+   <div class="column wow flipInX"><b>?</b><small>More projects coming soon™.</small></div>
+ </div>
+</div>
   <br/>
   <hr/>
   <small>Alternatives for donations: DO link: <a href="https://m.do.co/c/fb91ca4108f5">here.</a> Donate via PayPal.me: <a href="https://paypal.me/ynapw">here.</a></small>
   <small>BTC address: 19zxEbD9Jxk5MvpSWkE8e15c98nbdKfvtq</small>
   <small>Oh, and your banne.</small>
+ </body>
+</html>
