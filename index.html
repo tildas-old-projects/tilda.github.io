@@ -10,9 +10,17 @@
 <meta property="og:description" content="and this is my website">
 <meta name="twitter:card" content="summary" />
 <meta name="author" content="S Stewart">
-<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/simple-icons@1.2.7/index.min.js"></script>
 <style>
+.sidebar-bg {
+	background-image: url('https://unsplash.it/1360/768?random&blur');
+	width: 100%;
+	height: 100%;
+	background-width: 100%;
+	background-height: 100%;
+	background-size: 1000% 1000%;
+}
 .sidebar {
 	position: fixed;
 	height: 150px;
@@ -49,7 +57,7 @@ body {
 	background-color: #23272A;
 	text-align: center;
 	margin: 0 auto;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Oxygen Mono', monospace;
 	color: white;
 }
 
@@ -57,14 +65,7 @@ small {
 	font-size: 9px;
 }
 
-@font-face {
-	font-family: icons;
-	src: url("/fonts/icomoon.woff");
-	font-weight: 400;
-}
-
 .sidebar-icons {
-	font-family: icons;
 	text-align: center;
 	margin: 0 auto;
 	color: white;
@@ -74,14 +75,11 @@ small {
 	font-family: 'Oxygen Mono', monospace;
 }
 
-a:link {
-	color: #10aded;
-}
-a:visited {
+a:link, a:visited {
 	color: #10aded;
 }
 </style>
-<title>🤔🤔🤔</title>
+<title>tilda's world</title>
 </head>
 <body>
 	<div class="sidebar">
@@ -89,11 +87,13 @@ a:visited {
 	    <h1>Hey, I'm S</h1>
 	  </div>
 	  <div class="sidebar-body">
+	    <div class="sidebar-bg">
 	    <p>I'm a developer who programs in mostly Python, and sometimes web dev.
 	    <hr/>I also like technology in general and don't go outside too much.</p>
 	    <i>Wanna get in touch? <a href="https://sst8.typeform.com/to/PWJTUp">Fill out this</a></i>
 	    <div class="sidebar-icons">
-		<p><a href="https://twitter.com/xshot_">&#xe900;</a> <a href="https://github.com/tilda">&#xeab0;</a></p>
+		    <p><a href="https://twitter.com/xshot_"><span class="lnr lnr-" </a><a href="https://github.com/tilda">&#xeab0;</a></p>
+	    </div>
 	    </div>
 	  </div>
 	</div>
@@ -111,7 +111,6 @@ a:visited {
 	<script src="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.js"></script>
 	<script>
             var notyf = new Notyf()
-            notyf.confirm('Welcome!')
 	</script>
 </body>
 </html>
