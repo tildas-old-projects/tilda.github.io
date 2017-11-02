@@ -1,6 +1,5 @@
 # banne.club
-Hey! This is my personal website.
-
+Hey! This is my personal website. I put some stuff here.
 # Development
 Development is dead simple.
 1. clone this fuck
