@@ -10,8 +10,11 @@
 <meta property="og:description" content="and this is my website">
 <meta name="twitter:card" content="summary" />
 <meta name="author" content="S Stewart">
-<link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+<div id="deferred-styles">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+</div>
 <style>
+.no-js-header { position: fixed;height: 100px;top:-21px;font-family: 'Oxygen Mono', monospace; }
 .sidebar {
 	position: fixed;
 	height: 150px;
@@ -46,7 +49,8 @@ body {
 
 .content {
 	height: 100%;
-	width: 100%;
+    width: 90%;
+    float: right;
 	background-color: #23272A;
 	text-align: center;
 	margin: 0 auto;
@@ -74,6 +78,7 @@ a:link, a:visited {
 	color: #10aded;
 }
 </style>
+<noscript><div class="no-js-header"><h1><b>NANI??</b></h1><p>This website uses JavaScript wizardry to go smoothly. <a href="http://enable-javascript.com">Enable JavaScript</a> to be happy.</p></div></noscript>
 <script>var meme = 0;function a(){var meme = 0};function d(){if (meme > 1) { a() };if (meme == 1) { notyf.confirm('Okay! <a style="color:white;" href="https://discord.gg/PEW4wx9">Click here!</a>') } else { notyf.confirm('I\'m tilda#4778 (if you wanna join the Discord server, click again');meme++}}</script>
 <title>tilda's world</title>
 </head>
@@ -98,12 +103,27 @@ a:link, a:visited {
 		<h4>Welcome to my website, where I work on things like <a href="https://lolbot.banne.club">lolbot</a> 
             <br/>and <a href="https://github.com/tilda">other random junk</a></h4><br/>
 		<hr/><h1>I break things.</h1>
-		<h4>Daily, guaranteed, unless I'm not working on something that day <small>almost never happens</small>.</h4>
+		<h4>Just like every other developer, shit happens to me! I break stuff left and right. <small><i>cough</i> see lolbot for example <i>cough</i></small></h4>
 		<hr/>
 		<small>(c) 2017 S Stewart</small>
 		<small>Licensed under the MIT License</small>
 		<small><a href="https://github.com/tilda/tilda.github.io">Improvements? Go ahead.</a></small>
 	</div>
+    <script>
+     // Code taken from https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+     // (c) 2017 Google Inc. under the Apache License 2.0
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.js"></script>
 	<script>
