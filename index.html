@@ -13,77 +13,12 @@
 <div id="deferred-styles">
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
 </div>
-<style>
-.no-js-header { position: fixed;height: 100px;top:-21px;font-family: 'Oxygen Mono', monospace; }
-.sidebar {
-	position: fixed;
-	height: 150px;
-	left: 0;
-	right: 25px;
-	top: -21px;
-	width: 250px;
-	height: 100%;
-	box-shadow: 1px 1px 1px #10aded;
-	border-style: groove;
-	border-width: 8px;
-    	background-color: #23272a;
-	border-color: #7298da;
-	font-family: 'Oxygen Mono', monospace;
-}
 
-.sidebar-header {
-	background-color: #2C2F33;
-	height: 45px;
-	text-align: center;
-	color: white;
-}
-body {
-	background-color: #23272A;
-}
-.sidebar-body {
-	background-color: #23272A;
-	text-align: center;
-	top: 500px;
-	color: white;
-}
-
-.content {
-	height: 100%;
-    width: 90%;
-    float: right;
-	background-color: #23272A;
-	text-align: center;
-	margin: 0 auto;
-	font-family: 'Oxygen Mono', monospace;
-	color: white;
-}
-
-small {
-	font-size: 9px;
-}
-
-.sidebar-icons {
-	text-align: center;
-	margin: 0 auto;
-}
-
-.svg { filter: invert(100%); }
-
-.notyf {
-	font-family: 'Oxygen Mono', monospace;
-    color: white;
-}
-
-a:link, a:visited {
-	color: #10aded;
-}
-</style>
 <noscript>
 	<div class="no-js-header">
 		<h1><b>NANI??</b></h1>
 		<p>This website uses JavaScript wizardry to go smoothly. <a href="http://enable-javascript.com">Enable JavaScript</a> to be happy.</p>
 	</div></noscript>
-<script>var meme = 0;function a(){var meme = 0};function d(){if (meme > 1) { a() };if (meme == 1) { notyf.confirm('Okay! <a style="color:white;" href="https://discord.gg/PEW4wx9">Click here!</a>') } else { notyf.confirm('I\'m tilda#4778 (if you wanna join the Discord server, click again');meme++}}</script>
 <title>tilda's world</title>
 </head>
 <body>
@@ -113,25 +48,8 @@ a:link, a:visited {
 		<small>Licensed under the MIT License</small>
 		<small><a href="https://github.com/tilda/tilda.github.io">Improvements? Go ahead.</a></small>
 	</div>
-    <script>
-     // Code taken from https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
-     // (c) 2017 Google Inc. under the Apache License 2.0
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.js"></script>
-	<script>
-        var notyf = new Notyf()
-    </script>
+       
 </body>
 </html>
