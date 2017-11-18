@@ -26,3 +26,5 @@ var loadDeferredStyles = function() {
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
 }
+
+var notyf = new Notyf()
