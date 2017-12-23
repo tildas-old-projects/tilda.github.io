@@ -2,64 +2,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<meta name="description" content="hey I'm S, and this is my website">
-<meta name="google-site-verification" content="fmh9HIvrzc5xMv1LMIGFWCtaCG2kTpadCEGaY_sIXNM" />
-<meta property="og:title" content="hey, I'm S">
-<meta property="og:description" content="and this is my website">
-<meta name="twitter:card" content="summary" />
-<meta name="author" content="S Stewart">
-<div id="deferred-styles">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
-    <link href="https://banne.club/css/style.css" rel="stylesheet">
-</div>
-<noscript>
-	<div class="no-js-header">
-		<h1><b>NANI??</b></h1>
-		<p>This website uses JavaScript wizardry to go smoothly. <a href="http://enable-javascript.com">Enable JavaScript</a> to be happy.</p>
-	</div></noscript>
-<title>tilda's world</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="hey I'm S, this is my website">
+    <meta name="google-site-verification" content="fmh9HIvrzc5xMv1LMIGFWCtaCG2kTpadCEGaY_sIXNM" />
+    <meta property="og:title" content="hey, I'm S">
+    <meta property="og:description" content="and this is my website">
+    <meta name="twitter:card" content="summary" />
+    <meta name="author" content="S Stewart">
+    <style>
+     body { background-color: #212530; }
+     /* A sort of "box" to keep content in */
+     .box {
+         width: 40%;
+         height: 200px;
+         margin: auto;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         border: 2.5px solid #111222;
+         text-align: center;
+         padding-top: 5px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-bottom: 5px;
+         background-color: #23232B;
+     }
+     /* Use the font */
+     p, small, h1, h2, h3, h4, h5, h6 { font-family: 'Space Mono', monospace;color: white; }
+     /* No, fuck blue and purple colors, thanks */
+     a:link { color: white; }
+     a:visited { color: white; }
+     /* Thanks slice - https://slice.github.io */
+     .links ul {
+         padding: 0;
+         list-style-type: none;
+         list-style: none;
+     }
+
+     .links ul {
+         line-height: 1;
+     }
+
+     .links li a {
+         display: inline-block;
+         padding: 0.2em 0;
+         color: inherit;
+         text-decoration: none;
+     }
+     /* some more stuff, to fix other problems */
+     .links li i { display: inline-block; }
+     ul { list-style: none; }
+     li { display: inline-block; }
+     .links {
+         float: center;
+     }
+     .icon {
+         width: 70px;
+         margin: 0 auto;
+         padding-top: 10px;
+	     padding-left: 10px;
+         padding-right: 10px;
+     }
+     .icon:hover { background-color: #228938; }
+     .fab { color: white !important; }
+     .fab:hover { color: #ede !important; }
+     /* url tags and stuff */
+     .tag { font-size: 12px; }
+     .tag:hover { color: #bcd; }
+     .discord-tag:after { content: "tilda#3676"; }
+     .github-tag:after { content: "/tilda"; }
+     .twitter-tag:after { content: "/imtilda"; }
+     .patreon-tag:after { content: "/lold"; }
+     .reddit-tag:after { content: "/u/RShotZz"; }
+    </style>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet">
 </head>
 <body>
-	<div class="sidebar">
-	  <div class="sidebar-header">
-	    <h1>Hey, I'm S</h1>
-	  </div>
-	  <div class="sidebar-body">
-	    <p>I'm a developer who programs in mostly Python, and sometimes web dev.
-	    <hr/>I also like technology in general and don't go outside too much.</p>
-	    <i>Wanna get in touch? <a href="https://sst8.typeform.com/to/PWJTUp">Fill out this</a></i>
-	    <div class="sidebar-icons">
-	   <p><a href="https://twitter.com/xshot_"><img class="svg" width="24" height="24" src="https://cdn.jsdelivr.net/npm/simple-icons@1.2.7/icons/twitter.svg" />
-            </a><a href="https://github.com/tilda"><img width="24" class="svg" height="24" src="https://cdn.jsdelivr.net/npm/simple-icons@1.2.7/icons/github.svg" /></a>
-            <a href="javascript:d()"><img width="24" class="svg" height="24" src="https://cdn.jsdelivr.net/npm/simple-icons@1.2.7/icons/discord.svg" /></a></p>
-	    </div>
-	    </div>
-	</div>
-	<div class="content" id="c">
-		<h1>Hello!</h1>
-		<h4>Welcome to my website, where I work on things like <a href="https://lolbot.banne.club">lolbot</a> 
-            <br/>and <a href="https://github.com/tilda">other random junk</a></h4><br/>
-		<hr/><h1>I break things.</h1>
-		<h4>Just like every other developer, shit happens to me! I break stuff left and right. <br/><small><i>cough</i> see lolbot for example <i>cough</i></small></h4>
-		<hr/>
-		<small>(c) 2017 S Stewart</small>
-		<small>Licensed under the MIT License</small>
-		<small><a href="https://github.com/tilda/tilda.github.io">Improvements? Go ahead.</a></small>
-	</div>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/notyf@2.0.1/dist/notyf.min.js"></script>
-    <script src="/js/thing.js"></script>
-	<script type="text/javascript">
-        window._idl = {};
-        _idl.variant = "modal";
-        (function() {
-            var idl = document.createElement('script');
-            idl.async = true;
-            idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
-            document.getElementsByTagName('body')[0].appendChild(idl);
-        })();
-    </script>
+    <div class="box">
+        <h1 class="title">Hi, I'm tilda</h1>
+        <hr/>
+        <ul class="animated flipInX links">
+            <li>
+                <a href="https://github.com/tilda" target="_blank" rel="noopener">
+                    <i class="fab fa-github fa-2x icon"><p class="tag github-tag"></p></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/imtilda" target="_blank" rel="noopener">
+                    <i class="fab fa-twitter fa-2x icon"><p class="tag twitter-tag"></p></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://reddit.com/u/RShotZz" target="_blank" rel="noopener">
+                    <i class="fab fa-reddit fa-2x icon"><p class="tag reddit-tag"></p></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://discordapp.com" target="_blank" rel="noopener">
+		            <i class="fab fa-discord fa-2x icon"><p class="tag discord-tag"></p></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://patreon.com/lold" target="_blank" rel="noopener">
+                    <i class="fab fa-patreon fa-2x icon"><p class="tag patreon-tag"></p></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
