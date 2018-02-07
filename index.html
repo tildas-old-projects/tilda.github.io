@@ -31,6 +31,12 @@
          padding-bottom: 5px;
          background-color: #23232B;
      }
+     .text-gradient {
+        background: linear-gradient(to right, #6190e8, #a7bfe8);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+     }
      /* Use the font */
      p, small, h1, h2, h3, h4, h5, h6 { font-family: 'Space Mono', monospace;color: white; }
      /* No, fuck blue and purple colors, thanks */
@@ -88,7 +94,7 @@
 </head>
 <body>
     <div class="box">
-        <h1 class="title">Hi, I'm tilda</h1>
+        <h1 class="title"><div class="text-gradient">tilda's abode</div></h1>
         <hr/>
         <ul class="animated flipInX links">
             <li>
