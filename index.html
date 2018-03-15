@@ -69,23 +69,34 @@
      .icon {
          width: 70px;
          margin: 0 auto;
-         padding-top: 10px;
-	     padding-left: 10px;
-         padding-right: 10px;
+         padding-top: 5px;
+	     padding-left: 5px;
+         padding-right: 5px;
+         padding-bottom: 5px;
      }
-     .icon:hover { background-color: #228938; }
+     /* .icon:hover { background-color: #228938; } */
+     /* ^ deprecated in favor of per icon hover colors (based on brand) */
      .fab { color: white !important; }
-     .fab:hover { color: #ede !important; }
+     /* .fab:hover { color: #ede !important; }
      /* url tags and stuff */
      .tag { font-size: 12px; }
      .tag:hover { color: #bcd; }
+     .gh-hover:hover { background-color: #181717; }
+     .tw-hover:hover { background-color: #1da1f2; }
+     .rd-hover:hover { background-color: #ff4500; }
+     .dc-hover:hover { background-color: #7298da; }
+     .pt-hover:hover { background-color: #f96854; }
+     .gh-hover, .tw-hover, .rd-hover, .dc-hover, .pt-hover {
+        transition: transform 0.35s;
+     }
+     .gh-hover:hover, .tw-hover:hover, .rd-hover:hover, .dc-hover:hover, .pt-hover:hover {
+        transform: scale(1.25);
+     }
      .discord-tag:after { content: "tilda#9999"; }
      .github-tag:after { content: "/tilda"; }
      .twitter-tag:after { content: "/imtilda"; }
      .patreon-tag:after { content: "/lold"; }
      .reddit-tag:after { content: "/u/RShotZz"; }
-     /* memes */
-     .fuckingsmallass { font-size: 4px; }
     </style>
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
@@ -99,33 +110,32 @@
         <ul class="animated flipInX links">
             <li>
                 <a href="https://github.com/tilda" target="_blank" rel="noopener">
-                    <i class="fab fa-github fa-2x icon"><p class="tag github-tag"></p></i>
+                    <i class="fab fa-github fa-2x icon gh-hover"></i><p class="tag github-tag"></p>
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/imtilda" target="_blank" rel="noopener">
-                    <i class="fab fa-twitter fa-2x icon"><p class="tag twitter-tag"></p></i>
+                    <i class="fab fa-twitter fa-2x icon tw-hover"></i><p class="tag twitter-tag"></p>
                 </a>
             </li>
             <li>
                 <a href="https://reddit.com/u/RShotZz" target="_blank" rel="noopener">
-                    <i class="fab fa-reddit fa-2x icon"><p class="tag reddit-tag"></p></i>
+                    <i class="fab fa-reddit fa-2x icon rd-hover"></i><p class="tag reddit-tag"></p>
                 </a>
             </li>
             <li>
                 <a href="https://discordapp.com" target="_blank" rel="noopener">
-		            <i class="fab fa-discord fa-2x icon"><p class="tag discord-tag"></p></i>
+		            <i class="fab fa-discord fa-2x icon dc-hover"></i><p class="tag discord-tag"></p>
                 </a>
             </li>
             <li>
                 <a href="https://patreon.com/lold" target="_blank" rel="noopener">
-                    <i class="fab fa-patreon fa-2x icon"><p class="tag patreon-tag"></p></i>
+                    <i class="fab fa-patreon fa-2x icon pt-hover"></i><p class="tag patreon-tag"></p>
                 </a>
             </li>
         </ul>
         <hr/>
         <small>&copy; current year tilda.</small>
-        <small class="fuckingsmallass">tonkku and oliy</small>
     </div>
 </body>
 </html>
