@@ -98,6 +98,25 @@
      .twitter-tag:after { content: "/imtilda"; }
      .patreon-tag:after { content: "/lold"; }
      .reddit-tag:after { content: "/u/RShotZz"; }
+     /* Media queries */
+    @media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1) { 
+        .icon {
+            width: 50px;
+        }
+    }
+
+    @media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) {
+        .icon {
+            width: 60px;
+        }
+    }
     </style>
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
