@@ -15,6 +15,17 @@
     <title>tilda's abode</title>
     <style>
      body { background-color: #212530; }
+     .center-menu {
+        margin: 0 auto;
+        height: 60px;
+        text-align: center;
+        max-width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
+     .about {
+        text-align: center;
+        top: 50%;
+     }
      /* A sort of "box" to keep content in */
      .box {
          width: 40%;
@@ -39,7 +50,7 @@
         color: transparent;
      }
      /* Use the font */
-     p, small, h1, h2, h3, h4, h5, h6 { font-family: 'Space Mono', monospace;color: white; }
+     p, small, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Mono', monospace;color: white; }
      /* No, fuck blue and purple colors, thanks */
      a:link { color: white; }
      a:visited { color: white; }
@@ -118,14 +129,13 @@
         }
     }
     </style>
-    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="box">
-        <h1 class="title"><div class="text-gradient">tilda's abode</div></h1>
+    <div class="center-menu">
         <ul class="animated flipInX links">
             <li>
                 <a href="https://github.com/tilda" target="_blank" rel="noopener">
@@ -153,7 +163,12 @@
                 </a>
             </li>
         </ul>
-        <small>&copy; current year tilda.</small>
+    </div>
+    <div class="about">
+        <h1>Hi!</h1>
+        <p>Welcome to my website.</p>
+        <p>There's not much here.</p>
+        <p>But you should explore anyways.</p>
     </div>
 </body>
 </html>
